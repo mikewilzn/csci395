@@ -1,0 +1,85 @@
+1.
+PING www.oxford.ac.uk (151.101.66.216) 56(84) bytes of data.
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=1 ttl=56 time=6.12 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=2 ttl=56 time=6.14 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=3 ttl=56 time=6.05 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=4 ttl=56 time=6.23 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=5 ttl=56 time=6.23 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=6 ttl=56 time=6.16 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=7 ttl=56 time=6.12 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=8 ttl=56 time=6.00 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=9 ttl=56 time=6.19 ms
+64 bytes from 151.101.66.216 (151.101.66.216): icmp_seq=10 ttl=56 time=6.12 ms
+
+--- www.oxford.ac.uk ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 6.004/6.135/6.234/0.069 ms
+
+2.
+151.101.66.216
+
+3.
+No packets lost
+
+4.
+6.135 ms
+
+5.
+
+PING www.etown.edu (173.240.224.38) 56(84) bytes of data.
+
+--- www.etown.edu ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 19.554/22.100/44.024/7.308 ms
+
+Took almost four times as long on average.
+
+6.
+Roughly the same average times.
+
+7.
+Ping goes up a lot when going to other countries. Although the ping to Europe and Asia/Australia is lover than South America and Africa.
+
+8.
+There is likely more mature infrastructure between the US and Europe and Asia/Australia than other countries.
+
+10.
+traceroute to www.oxford.ac.uk (151.101.194.216), 30 hops max, 60 byte packets
+ 1  _gateway (10.110.1.254)  0.285 ms  0.408 ms  0.404 ms
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  151.101.194.216 (151.101.194.216)  5.963 ms  5.906 ms  5.910 ms
+
+11.
+7 hops. 5.9 ms Which corresponds with the overall ping for the website. This makes sense.
+
+12.
+
+traceroute to afrinic.net (196.216.2.6), 30 hops max, 60 byte packets
+ 1  _gateway (10.110.1.254)  0.264 ms  0.371 ms  0.367 ms
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  www.afrinic.net (196.216.2.6)  251.922 ms  251.987 ms  251.985 ms
+
+Seems to be getting blocked and can't see the countries it goes through.
+
+15.
+You'd be much better of using FedEx because that amount of data would take almost 1000 hours to transfer on a 100Mbps link.
+
+16.
+3.5 Mbps
+4 MB = 32 Mb / 3.5 Mbps = Slightly over 9 seconds.
+1.6 Mbps
+32 Mb / 1.6 Mbps = 20 seconds
+
+
