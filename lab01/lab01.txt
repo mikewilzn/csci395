@@ -83,3 +83,8 @@ You'd be much better of using FedEx because that amount of data would take almos
 32 Mb / 1.6 Mbps = 20 seconds
 
 
+Research Topic Ideas:
+Bufferbloat
+NAT Traversal
+NAT Slipstreaming
+Certificate Authority/Root Store Auditing
