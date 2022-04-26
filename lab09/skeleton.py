@@ -77,12 +77,12 @@ packet = layer3 / layer4
 start_time = time.time()
 
 # Sends the packet and stores the response, timeout is the max time to wait for a response in seconds
-for ping in range(len(numPings)):
+for ping in range(numPings):
     start_time = time.time()
     answer = sr1(packet, timeout=2)
     end_time = time.time()
     if answer:
-        print(answer)
+        print(answer.summary())
     else:
         print("Request timed out")
 
